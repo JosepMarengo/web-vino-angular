@@ -2,14 +2,14 @@
 <form *ngIf="!loading" [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="row">
         <div class="mb-3 col">
-            <label class="form-label">First Name</label>
+            <label class="form-label">Primer nombre</label>
             <input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
             <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
-                <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                <div *ngIf="f.firstName.errors.required">Primer nombre requerido</div>
             </div>
         </div>
         <div class="mb-3 col">
-            <label class="form-label">Last Name</label>
+            <label class="form-label">Apellidos</label>
             <input type="text" formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
             <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
                 <div *ngIf="f.lastName.errors.required">Last Name is required</div>
@@ -18,7 +18,7 @@
     </div>
     <div class="row">
         <div class="mb-3 col">
-            <label class="form-label">Username</label>
+            <label class="form-label">Nombre de usuario</label>
             <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
             <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
                 <div *ngIf="f.username.errors.required">Username is required</div>
